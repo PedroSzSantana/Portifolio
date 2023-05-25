@@ -8,20 +8,26 @@ export const StyledCertificates = styled.div`
   height: 100vh;
   background: linear-gradient(#383838, #383838);
   div:nth-child(1){
-    width: 730px;
+    width: 820px;
 
-    @media screen and (max-width: 700px){
-      width: 350px;
+    @media screen and (max-width: 800px){
+      width: 400px;
+    }
+    @media screen and (max-width: 400px){
+      width: 250px;
     }
   }
   img {
-    width: 350px;
+    width: 400px;
     height: 250px;
     border-radius: 30px;
     cursor: pointer;
     :hover {
       transform: scale(1.05);
       transition: 0.5s;
+    }
+    @media screen and (max-width: 400px){
+      width: 250px;
     }
   }
 `;

@@ -1,40 +1,54 @@
 import { TitleSection } from "../../style/StylesGenerics";
 import { ContainerHability, StyleHability } from "./StyleSkils";
-import iconCheck from "../../assets/images/iconCheck.png";
+import iconHtml from "../../assets/images/logos/html5.png";
+import iconCss from "../../assets/images/logos/css3.png";
+import iconJs from "../../assets/images/logos/javascript.png";
+import iconTs from "../../assets/images/logos/typescript.png";
+import iconRs from "../../assets/images/logos/react.png";
+import iconNode from "../../assets/images/logos/node-js.png";
+import iconMongo from "../../assets/images/logos/mongodb.png";
+
 import { Fade } from "react-awesome-reveal";
 
 
 const SectionSkils = () => {
-  const icon = <img src={iconCheck} alt="IconCheck" />;
+  const iconHTML = <img src={iconHtml} alt="IconCheck" />;
+  const iconCSS = <img src={iconCss} alt="IconCheck" />;
+  const iconJS = <img src={iconJs} alt="IconCheck" />;
+  const iconTS = <img src={iconTs} alt="IconCheck" />;
+  const iconRS = <img src={iconRs} alt="IconCheck" />;
+  const iconNODE = <img src={iconNode} alt="IconCheck" />;
+  const iconMONGO = <img src={iconMongo} alt="IconCheck" />;
+
+
   return (
     <StyleHability id="skils" >
       <TitleSection>Skils</TitleSection>
       <ContainerHability>
         <Fade delay={1000} direction="left">
-          <div className="Skils">
+          <div className="ContainerSkils">
             <h1>Front-End</h1>
             <div className="front">
               <div>
-                <span>{icon} HTML</span>
-                <span>{icon}CSS</span>
-                <span>{icon}JAVASCRIPT</span>
+                <span>{iconHTML} HTML</span>
+                <span>{iconCSS}CSS</span>
+                <span>{iconJS}JAVASCRIPT</span>
               </div>
               <div>
-                <span>{icon}TYPESCRIPT</span>
-                <span>{icon}REACTJS</span>
+                <span>{iconTS}TYPESCRIPT</span>
+                <span>{iconRS}REACTJS</span>
               </div>
             </div>
           </div>
         </Fade>
         <Fade delay={1000} direction="right">
-          <div className="Skils">
+          <div className="ContainerSkils">
             <h1>Back-End</h1>
-            <div className="front">
+            <div className="back">
               <div>
-                <span>{icon}NODE-JS</span>
-                <span>{icon}MONGODB</span>
+                <span>{iconNODE}NODE-JS</span>
+                <span>{iconMONGO}MONGODB</span>
               </div>
-              <span>{icon}API</span>
             </div>
           </div>
         </Fade>

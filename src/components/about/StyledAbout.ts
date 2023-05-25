@@ -10,6 +10,7 @@ export const StyleAbout = styled.div`
   background: linear-gradient(#535353, #353535);
 
   article {
+    cursor: default;
     width: 50%;
     color: #ffff;
     font-size: 22px;

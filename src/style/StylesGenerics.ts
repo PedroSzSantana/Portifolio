@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 export const TitleSection = styled.h1`
+cursor: default;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -25,14 +26,13 @@ interface ButtonProps {
   btnType: "1" | "2";
 }
 export const ButtonGeneric = styled.a<ButtonProps>`
-text-align: center;
+  text-align: center;
   background-color: ${({ btnType }) =>
     btnType === "1" ? "darkgray" : "rgb(73, 73, 73)"};
   color: #ffff;
   width: ${({ btnType }) => (btnType === "1" ? "340px" : "170px")};
   text-decoration: none;
-  padding: ${({ btnType }) =>
-    btnType === "1" ? "10px 120px" : "5px 30px"};
+  padding: ${({ btnType }) => (btnType === "1" ? "10px 120px" : "5px 30px")};
   border-radius: 20px;
   margin-top: 20px;
 
@@ -40,7 +40,7 @@ text-align: center;
     background-color: rgb(104, 104, 104);
   }
   @media screen and (max-width: 500px) {
-    width: ${({ btnType }) => (btnType === "1" ? "200px" : "70px")};
+    width: ${({ btnType }) => (btnType === "1" ? "200px" : "100px !important")};
     padding: ${({ btnType }) => (btnType === "1" ? "10px 60px" : "10px 30px")};
     text-align: center;
     ${({ btnType }) => btnType !== "1" && "width: 50px;"}

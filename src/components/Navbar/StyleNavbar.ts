@@ -62,4 +62,8 @@ export const StyleNavbar = styled.header`
     transform: rotateZ(0deg);
     margin: 0px 0px 0px 100px;
   }
+  @media screen and (max-width: 400px) {
+    transform: rotateZ(0deg);
+    margin: 0px 0px 0px 9%;
+  }
 `;

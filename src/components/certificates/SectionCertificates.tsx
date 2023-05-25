@@ -5,6 +5,7 @@ import "slick-carousel/slick/slick-theme.css";
 import JS from "../../assets/images/img-certificates/CertificadoJS.png";
 import NODE from "../../assets/images/img-certificates/CertificadoNode.png";
 import REACT from "../../assets/images/img-certificates/CertificadoReact.png";
+import MONGODB from "../../assets/images/img-certificates/CertificadoMongodb.png";
 import LEIGO from "../../assets/images/img-certificates/CertificadoIntr.jpg";
 import { TitleSection } from "../../style/StylesGenerics";
 
@@ -12,13 +13,12 @@ const settings = {
   autoplay: true,
   autoplaySpeed: 3000,
   dots: true,
-  infinite: true,
   speed: 500,
   slidesToShow: 2,
-  slidesToScroll: 1,
+  slidesToScroll: 2,
   responsive: [
     {
-      breakpoint: 700,
+      breakpoint: 800,
       settings: {
         slidesToShow: 1,
         slidesToScroll:1 
@@ -64,6 +64,14 @@ export const SectionCertificates = () => {
               target="_blank"
             >
               <img src={LEIGO} alt="" />
+            </a>
+          </div>
+          <div>
+            <a
+              href="https://github.com/PedroSzSantana/certificates/blob/main/CertificadoMongodb.pdf"
+              target="_blank"
+            >
+              <img src={MONGODB} alt="" />
             </a>
           </div>
         </Slider>

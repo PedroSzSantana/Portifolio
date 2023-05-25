@@ -16,7 +16,8 @@ export const ContainerHability = styled.div`
   gap: 30px;
   color: #ffff;
   flex-wrap: wrap;
-  .Skils {
+  cursor: default;
+  .ContainerSkils {
     background: rgb(105, 102, 102);
     display: flex;
     flex-direction: column;
@@ -25,15 +26,15 @@ export const ContainerHability = styled.div`
     border: solid 2px black;
     border-radius: 20px;
     width: 500px;
-    height:300px;
-    :hover{
+    height: 300px;
+    :hover {
       border: solid 2px #ffff;
     }
     h1 {
       margin-bottom: 10px;
       text-align: center;
     }
-    
+
     span {
       font-size: 20px;
       font-weight: 600;
@@ -41,11 +42,11 @@ export const ContainerHability = styled.div`
       align-items: center;
       gap: 5px;
       :hover {
-        color: rgb(48, 46, 46);
+        color: rgb(186, 186, 186);
       }
     }
 
-    @media screen and (max-width: 500px) {
+    @media screen and (max-width: 490px) {
       justify-content: center;
       width: 300px;
       span {
@@ -54,6 +55,15 @@ export const ContainerHability = styled.div`
           width: 15px;
         }
       }
+    }
+  }
+  
+  .back {
+    div {
+      display: flex;
+      gap: 100px;
+      justify-content: center;
+      align-items: center;
     }
   }
   .front {
