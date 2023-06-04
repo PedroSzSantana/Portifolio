@@ -9,6 +9,7 @@ export const StyleHability = styled.div`
   height: 100vh;
   text-align: left;
   background: linear-gradient(#353535, #383838);
+  overflow-x: hidden;
 `
 export const ContainerHability = styled.div`
   display: flex;

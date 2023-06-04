@@ -49,7 +49,7 @@ export const StyleSectionProjects = styled.div`
     div {
       div {
         width: 120px;
-        heigth: 120px;
+        height: 120px;
       }
     }
   }

@@ -4,7 +4,7 @@ import CV from '../../assets/DECLARAO-DE-AUTNOMO.pdf'
 import { ButtonGeneric } from '../../style/StylesGenerics'
 import { Animation } from './Animation/Animation'
 import { Fade } from 'react-awesome-reveal'
-import { DownloadOutlined } from '@ant-design/icons'
+import { DownloadOutlined, GithubOutlined } from '@ant-design/icons'
 
 export const Home = () => {
   return (
@@ -36,7 +36,15 @@ export const Home = () => {
                 </ButtonGeneric>
               </Fade>
               <Fade delay={1400} direction="up" cascade>
-                <ButtonGeneric btnType={'2'}>agerggg</ButtonGeneric>
+                <ButtonGeneric
+                  btnType={'2'}
+                  href="https://github.com/PedroSzSantana"
+                  rel="noreferrer"
+                  target="_blank"
+                >
+                  <GithubOutlined />
+                  GitHub
+                </ButtonGeneric>
               </Fade>
             </div>
           </div>

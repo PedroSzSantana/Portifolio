@@ -4,6 +4,7 @@ import { Navbar } from '../components/Navbar/Navbar'
 import { SectionProjects } from '../components/Projects/SectionProjects'
 import { SectionAbout } from '../components/about/about'
 import { SectionCertificates } from '../components/certificates/SectionCertificates'
+import Footer from '../components/footer/Footer'
 
 const Index = () => {
   return (
@@ -14,6 +15,7 @@ const Index = () => {
       <SectionSkils />
       <SectionProjects />
       <SectionCertificates />
+      <Footer />
     </div>
   )
 }

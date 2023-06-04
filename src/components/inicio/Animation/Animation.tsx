@@ -3,7 +3,7 @@ import { AnimationGif } from './StyledAnimation'
 
 export const Animation = () => {
   return (
-    <div style={{ overflow: 'hidden' }}>
+    <div style={{ overflowX: 'hidden' }}>
       <AnimationGif Conteiner="up">
         <img className="gif_bnc animationgif" src={Gif} alt="" />
       </AnimationGif>

@@ -2,11 +2,12 @@ import styled from 'styled-components'
 
 export const StyleAbout = styled.div`
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
   height: 100vh;
   text-align: left;
+  overflow-x: hidden;
   background: linear-gradient(#535353, #353535);
 
   article {

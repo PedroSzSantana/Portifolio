@@ -2,14 +2,15 @@ import styled from 'styled-components'
 
 export const StyledCertificates = styled.div`
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
   height: 100vh;
   background: linear-gradient(#383838, #383838);
+  overflow-x: hidden;
+
   div:nth-child(1) {
     width: 820px;
-
     @media screen and (max-width: 800px) {
       width: 400px;
     }

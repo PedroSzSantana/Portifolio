@@ -12,23 +12,21 @@ export const Navbar = () => {
   return (
     <StyleNavbar>
       <nav>
-        <ul>
-          <AnchorLink href="#home">
-            <HomeOutlined />
-          </AnchorLink>
-          <AnchorLink href="#about">
-            <UserOutlined />
-          </AnchorLink>
-          <AnchorLink href="#skils">
-            <ThunderboltOutlined />
-          </AnchorLink>
-          <AnchorLink href="#projects">
-            <ReadOutlined />
-          </AnchorLink>
-          <AnchorLink href="#certificates">
-            <SolutionOutlined />
-          </AnchorLink>
-        </ul>
+        <AnchorLink href="#home">
+          <HomeOutlined />
+        </AnchorLink>
+        <AnchorLink href="#about">
+          <UserOutlined />
+        </AnchorLink>
+        <AnchorLink href="#skils">
+          <ThunderboltOutlined />
+        </AnchorLink>
+        <AnchorLink href="#projects">
+          <ReadOutlined />
+        </AnchorLink>
+        <AnchorLink href="#certificates">
+          <SolutionOutlined />
+        </AnchorLink>
       </nav>
     </StyleNavbar>
   )

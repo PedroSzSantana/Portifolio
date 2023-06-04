@@ -1,12 +1,11 @@
 import styled from 'styled-components'
 
 export const TitleSection = styled.h1`
-  cursor: default;
   display: flex;
+  justify-content: center;
   flex-direction: column;
-  justify-content: center;
+  cursor: default;
   font-size: 70px;
-  justify-content: center;
   color: #ffff;
   overflow: hidden;
   margin-bottom: 20px;
