@@ -1,10 +1,7 @@
-import Index from "./pages";
+import Index from './pages'
 
 function App() {
-
-  return (
-    <Index/>
-  )
+  return <Index />
 }
 
 export default App

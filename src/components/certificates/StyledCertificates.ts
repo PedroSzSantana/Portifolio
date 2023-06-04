@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
 export const StyledCertificates = styled.div`
   display: flex;
@@ -7,13 +7,13 @@ export const StyledCertificates = styled.div`
   flex-direction: column;
   height: 100vh;
   background: linear-gradient(#383838, #383838);
-  div:nth-child(1){
+  div:nth-child(1) {
     width: 820px;
 
-    @media screen and (max-width: 800px){
+    @media screen and (max-width: 800px) {
       width: 400px;
     }
-    @media screen and (max-width: 400px){
+    @media screen and (max-width: 400px) {
       width: 250px;
     }
   }
@@ -26,8 +26,8 @@ export const StyledCertificates = styled.div`
       transform: scale(1.05);
       transition: 0.5s;
     }
-    @media screen and (max-width: 400px){
+    @media screen and (max-width: 400px) {
       width: 250px;
     }
   }
-`;
+`

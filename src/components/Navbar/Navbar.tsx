@@ -4,9 +4,9 @@ import {
   ThunderboltOutlined,
   ReadOutlined,
   SolutionOutlined,
-} from "@ant-design/icons";
-import { StyleNavbar } from "./StyleNavbar";
-import AnchorLink from "react-anchor-link-smooth-scroll";
+} from '@ant-design/icons'
+import { StyleNavbar } from './StyleNavbar'
+import AnchorLink from 'react-anchor-link-smooth-scroll'
 
 export const Navbar = () => {
   return (
@@ -31,5 +31,5 @@ export const Navbar = () => {
         </ul>
       </nav>
     </StyleNavbar>
-  );
-};
+  )
+}

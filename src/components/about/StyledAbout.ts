@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
 export const StyleAbout = styled.div`
   display: flex;
@@ -13,15 +13,21 @@ export const StyleAbout = styled.div`
     cursor: default;
     width: 50%;
     color: #ffff;
-    font-size: 22px;
-    font-weight: 600;
+    font-size: 20px;
+    font-weight: 500;
   }
-  @media screen and (max-width: 500px) {
+  @media screen and (max-width: 700px) {
     article {
-      padding-top: 80px;
+      padding-top: 20px;
       width: 85%;
-      font-size: 20px;
-      font-weight: 600;
+      font-size: 18px;
     }
   }
-`;
+  @media screen and (max-width: 400px) {
+    article {
+      padding-top: 20px;
+      width: 85%;
+      font-size: 12px;
+    }
+  }
+`

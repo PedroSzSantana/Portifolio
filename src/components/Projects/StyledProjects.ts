@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
 export const StyleSectionProjects = styled.div`
   display: flex;
@@ -45,4 +45,12 @@ export const StyleSectionProjects = styled.div`
       }
     }
   }
-`;
+  @media screen and (max-width: 400px) {
+    div {
+      div {
+        width: 120px;
+        heigth: 120px;
+      }
+    }
+  }
+`

@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
 export const StylePerfil = styled.div`
   display: flex;
@@ -9,9 +9,9 @@ export const StylePerfil = styled.div`
   background: linear-gradient(#a9a9a9, #535353);
   padding-top: 100px;
   overflow-y: hidden;
-  overflow-x:hidden;
+  overflow-x: hidden;
   cursor: default;
-  
+
   div {
     overflow: hidden;
     display: flex;
@@ -42,7 +42,7 @@ export const StylePerfil = styled.div`
       h1 {
         font-size: 25px;
       }
-      h2{
+      h2 {
         font-size: 20px;
       }
       a {
@@ -56,4 +56,4 @@ export const StylePerfil = styled.div`
       margin-left: 0;
     }
   }
-`;
+`

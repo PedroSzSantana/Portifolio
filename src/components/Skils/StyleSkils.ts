@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
 export const StyleHability = styled.div`
   display: flex;
@@ -9,7 +9,7 @@ export const StyleHability = styled.div`
   height: 100vh;
   text-align: left;
   background: linear-gradient(#353535, #383838);
-`;
+`
 export const ContainerHability = styled.div`
   display: flex;
   justify-content: center;
@@ -17,53 +17,16 @@ export const ContainerHability = styled.div`
   color: #ffff;
   flex-wrap: wrap;
   cursor: default;
-  .ContainerSkils {
-    background: rgb(105, 102, 102);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-    border: solid 2px black;
-    border-radius: 20px;
-    width: 500px;
-    height: 300px;
-    :hover {
-      border: solid 2px #ffff;
-    }
-    h1 {
-      margin-bottom: 10px;
-      text-align: center;
-    }
 
-    span {
-      font-size: 20px;
-      font-weight: 600;
-      display: flex;
-      align-items: center;
-      gap: 5px;
-      :hover {
-        color: rgb(186, 186, 186);
-      }
-    }
-
-    @media screen and (max-width: 490px) {
-      justify-content: center;
-      width: 300px;
-      span {
-        font-size: 16px;
-        img {
-          width: 15px;
-        }
-      }
-    }
-  }
-  
   .back {
     div {
       display: flex;
       gap: 100px;
       justify-content: center;
       align-items: center;
+      @media screen and (max-width: 400px) {
+        gap: 50px;
+      }
     }
   }
   .front {
@@ -77,8 +40,53 @@ export const ContainerHability = styled.div`
       gap: 20px;
     }
 
-    @media screen and (max-width: 500px) {
+    @media screen and (max-width: 700px) {
       gap: 40px;
     }
   }
-`;
+`
+export const ContainerSkils = styled.div`
+  background: rgb(105, 102, 102);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  border: solid 2px black;
+  border-radius: 20px;
+  width: 500px;
+  height: 300px;
+  :hover {
+    border: solid 2px #ffff;
+  }
+  h1 {
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  span {
+    font-size: 20px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    :hover {
+      color: rgb(186, 186, 186);
+    }
+  }
+  @media screen and (max-width: 700px) {
+    width: 400px;
+  }
+  @media screen and (max-width: 490px) {
+    justify-content: center;
+    width: 300px;
+    span {
+      font-size: 16px;
+      img {
+        width: 15px;
+      }
+    }
+  }
+  @media screen and (max-width: 400px) {
+    height: 200px;
+  }
+`

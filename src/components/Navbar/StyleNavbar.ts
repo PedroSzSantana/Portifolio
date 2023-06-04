@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
 export const StyleNavbar = styled.header`
   background: rgba(0, 0, 0, 0.3);
@@ -36,7 +36,7 @@ export const StyleNavbar = styled.header`
           background: black;
           color: #1f1f38;
         }
-        
+
         svg {
           transform: rotateZ(-90deg);
           width: 20px;
@@ -45,7 +45,7 @@ export const StyleNavbar = styled.header`
       }
     }
   }
-  .active{
+  .active {
     background: #ffff;
     color: #1f1f38;
   }
@@ -65,5 +65,6 @@ export const StyleNavbar = styled.header`
   @media screen and (max-width: 400px) {
     transform: rotateZ(0deg);
     margin: 0px 0px 0px 9%;
+    width: 250px;
   }
-`;
+`

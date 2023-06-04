@@ -1,6 +1,6 @@
-import { StyleSectionProjects } from "./StyledProjects";
-import { ButtonGeneric, TitleSection } from "../../style/StylesGenerics";
-import { Fade } from "react-awesome-reveal";
+import { StyleSectionProjects } from './StyledProjects'
+import { ButtonGeneric, TitleSection } from '../../style/StylesGenerics'
+import { Fade } from 'react-awesome-reveal'
 
 export const SectionProjects = () => {
   return (
@@ -28,7 +28,7 @@ export const SectionProjects = () => {
       </div>
       <Fade direction="down" delay={800}>
         <ButtonGeneric
-          btnType={"1"}
+          btnType={'1'}
           href="https://github.com/PedroSzSantana?tab=repositories"
           rel="noreferrer"
           target="_blank"
@@ -38,5 +38,5 @@ export const SectionProjects = () => {
         </ButtonGeneric>
       </Fade>
     </StyleSectionProjects>
-  );
-};
+  )
+}

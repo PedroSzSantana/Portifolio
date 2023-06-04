@@ -1,32 +1,30 @@
-import { TitleSection } from "../../style/StylesGenerics";
-import { ContainerHability, StyleHability } from "./StyleSkils";
-import iconHtml from "../../assets/images/logos/html5.png";
-import iconCss from "../../assets/images/logos/css3.png";
-import iconJs from "../../assets/images/logos/javascript.png";
-import iconTs from "../../assets/images/logos/typescript.png";
-import iconRs from "../../assets/images/logos/react.png";
-import iconNode from "../../assets/images/logos/node-js.png";
-import iconMongo from "../../assets/images/logos/mongodb.png";
+import { TitleSection } from '../../style/StylesGenerics'
+import { ContainerHability, ContainerSkils, StyleHability } from './StyleSkils'
+import iconHtml from '../../assets/images/logos/html5.png'
+import iconCss from '../../assets/images/logos/css3.png'
+import iconJs from '../../assets/images/logos/javascript.png'
+import iconTs from '../../assets/images/logos/typescript.png'
+import iconRs from '../../assets/images/logos/react.png'
+import iconNode from '../../assets/images/logos/node-js.png'
+import iconMongo from '../../assets/images/logos/mongodb.png'
 
-import { Fade } from "react-awesome-reveal";
-
+import { Fade } from 'react-awesome-reveal'
 
 const SectionSkils = () => {
-  const iconHTML = <img src={iconHtml} alt="IconCheck" />;
-  const iconCSS = <img src={iconCss} alt="IconCheck" />;
-  const iconJS = <img src={iconJs} alt="IconCheck" />;
-  const iconTS = <img src={iconTs} alt="IconCheck" />;
-  const iconRS = <img src={iconRs} alt="IconCheck" />;
-  const iconNODE = <img src={iconNode} alt="IconCheck" />;
-  const iconMONGO = <img src={iconMongo} alt="IconCheck" />;
-
+  const iconHTML = <img src={iconHtml} alt="IconCheck" />
+  const iconCSS = <img src={iconCss} alt="IconCheck" />
+  const iconJS = <img src={iconJs} alt="IconCheck" />
+  const iconTS = <img src={iconTs} alt="IconCheck" />
+  const iconRS = <img src={iconRs} alt="IconCheck" />
+  const iconNODE = <img src={iconNode} alt="IconCheck" />
+  const iconMONGO = <img src={iconMongo} alt="IconCheck" />
 
   return (
-    <StyleHability id="skils" >
+    <StyleHability id="skils">
       <TitleSection>Skils</TitleSection>
       <ContainerHability>
         <Fade delay={1000} direction="left">
-          <div className="ContainerSkils">
+          <ContainerSkils>
             <h1>Front-End</h1>
             <div className="front">
               <div>
@@ -39,10 +37,10 @@ const SectionSkils = () => {
                 <span>{iconRS}REACTJS</span>
               </div>
             </div>
-          </div>
+          </ContainerSkils>
         </Fade>
         <Fade delay={1000} direction="right">
-          <div className="ContainerSkils">
+          <ContainerSkils>
             <h1>Back-End</h1>
             <div className="back">
               <div>
@@ -50,10 +48,10 @@ const SectionSkils = () => {
                 <span>{iconMONGO}MONGODB</span>
               </div>
             </div>
-          </div>
+          </ContainerSkils>
         </Fade>
       </ContainerHability>
     </StyleHability>
-  );
-};
-export default SectionSkils;
+  )
+}
+export default SectionSkils

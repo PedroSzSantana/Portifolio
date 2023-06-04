@@ -1,9 +1,8 @@
-import { StyleAbout } from "./StyledAbout";
-import { TitleSection } from "../../style/StylesGenerics";
-import { Fade } from "react-awesome-reveal";
+import { StyleAbout } from './StyledAbout'
+import { TitleSection } from '../../style/StylesGenerics'
+import { Fade } from 'react-awesome-reveal'
 
 export const SectionAbout = () => {
-
   return (
     <StyleAbout id="about">
       <Fade direction="right" delay={800}>
@@ -11,14 +10,31 @@ export const SectionAbout = () => {
       </Fade>
       <article>
         <Fade direction="left" delay={1000} duration={2000}>
-          Meu nome é Pedro Souza, sempre estive em contado com tecnologia desde
-          muito novo, bom não sei como eu realmente me interessei em estudar
-          programação parece que foi o destino, quando me dei conta percebi que
-          programar era realmente o que eu amo fazer. Comecei a estudar
-          programação em 2021, atualmente com conhecimento em font-end,
-          estudando novas tecnologias para virar um programador Full-Stack.
+          <p>
+            Meu nome é Pedro Souza, tenho 19 anos e sou apaixonado por
+            tecnologia desde muito jovem. Não sei ao certo como me interessei
+            pela programação, mas parece que foi destino. Quando percebi,
+            descobri que programar é realmente minha paixão.
+          </p>{' '}
+          <p>
+            Comecei a estudar programação em 2021 e, desde então, adquiri
+            conhecimento em desenvolvimento front-end, back-end e mobile.
+            Atualmente, estou dedicado a aprimorar e aprofundar ainda mais meus
+            conhecimentos nessa área.
+          </p>{' '}
+          <p>
+            Através do estudo contínuo, estou em busca de oportunidades para
+            aplicar minhas habilidades e contribuir para projetos desafiadores.
+            Estou sempre aberto a novas tecnologias e tendências, buscando me
+            manter atualizado e expandir meu conjunto de habilidades.
+          </p>
+          <p>
+            Estou animado com o futuro da programação e ansioso para enfrentar
+            novos desafios que me permitam crescer como profissional e continuar
+            fazendo o que amo.
+          </p>
         </Fade>
       </article>
     </StyleAbout>
-  );
-};
+  )
+}
