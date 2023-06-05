@@ -17,7 +17,7 @@ export const StyleAbout = styled.div`
     font-size: 20px;
     font-weight: 500;
   }
-  @media screen and (max-width: 700px) {
+  @media screen and (max-width: 730px) {
     article {
       padding-top: 20px;
       width: 85%;

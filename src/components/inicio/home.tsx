@@ -1,5 +1,5 @@
 import { StylePerfil } from './StyledHome'
-import PicPerfil from '../../assets/images/20220918_13310111.png'
+import Profile from '../../assets/images/Profile.webp'
 import CV from '../../assets/Pedro_Souza Santana_Curriculo.pdf'
 import { ButtonGeneric } from '../../style/StylesGenerics'
 import { Animation } from './Animation/Animation'
@@ -51,7 +51,7 @@ export const Home = () => {
         </Fade>
         <Fade direction="right">
           <div>
-            <img src={PicPerfil} alt="Foto Perfil" />
+            <img src={Profile} alt="Foto Perfil" />
           </div>
         </Fade>
       </StylePerfil>
