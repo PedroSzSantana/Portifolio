@@ -39,7 +39,7 @@ export const AnimationGif = styled.div<Props>`
       margin-left: -50px;
     }
   }
-  @media screen and (max-width: 400px) {
+  @media screen and (max-width: 600px) {
     display: none;
   }
 `

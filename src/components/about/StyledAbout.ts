@@ -26,7 +26,6 @@ export const StyleAbout = styled.div`
   }
   @media screen and (max-width: 400px) {
     article {
-      padding-top: 20px;
       width: 85%;
       font-size: 12px;
     }
