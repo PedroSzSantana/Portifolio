@@ -1,6 +1,6 @@
 import { StylePerfil } from './StyledHome'
 import PicPerfil from '../../assets/images/20220918_13310111.png'
-import CV from '../../assets/DECLARAO-DE-AUTNOMO.pdf'
+import CV from '../../assets/Pedro_Souza Santana_Curriculo.pdf'
 import { ButtonGeneric } from '../../style/StylesGenerics'
 import { Animation } from './Animation/Animation'
 import { Fade } from 'react-awesome-reveal'
