@@ -24,6 +24,14 @@ export const StyleAbout = styled.div`
       font-size: 18px;
     }
   }
+  @media screen and (max-width: 700px) {
+    article {
+      padding-top: 20px;
+      width: 85%;
+      font-size: 14px;
+      font-weight: 400;
+    }
+  }
   @media screen and (max-width: 400px) {
     article {
       width: 85%;
