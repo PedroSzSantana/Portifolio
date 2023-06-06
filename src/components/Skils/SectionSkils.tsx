@@ -1,5 +1,10 @@
 import { TitleSection } from '../../style/StylesGenerics'
-import { ContainerHability, ContainerSkils, StyleHability } from './StyleSkils'
+import {
+  CardSkils,
+  ContainerHability,
+  ContainerSkils,
+  StyleHability,
+} from './StyleSkils'
 import iconHtml from '../../assets/images/logos/html5.png'
 import iconCss from '../../assets/images/logos/css3.png'
 import iconJs from '../../assets/images/logos/javascript.png'
@@ -26,7 +31,7 @@ const SectionSkils = () => {
         <Fade delay={1000} direction="left">
           <ContainerSkils>
             <h1>Front-End</h1>
-            <div className="front">
+            <CardSkils>
               <div>
                 <span>{iconHTML} HTML</span>
                 <span>{iconCSS}CSS</span>
@@ -35,19 +40,23 @@ const SectionSkils = () => {
               <div>
                 <span>{iconTS}TYPESCRIPT</span>
                 <span>{iconRS}REACTJS</span>
+                <span>{iconRS}REACT NATIVE</span>
               </div>
-            </div>
+            </CardSkils>
           </ContainerSkils>
         </Fade>
         <Fade delay={1000} direction="right">
           <ContainerSkils>
             <h1>Back-End</h1>
-            <div className="back">
+            <CardSkils>
               <div>
                 <span>{iconNODE}NODE-JS</span>
                 <span>{iconMONGO}MONGODB</span>
               </div>
-            </div>
+              <div>
+                <span>{iconNODE}MYSQL</span>
+              </div>
+            </CardSkils>
           </ContainerSkils>
         </Fade>
       </ContainerHability>

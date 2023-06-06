@@ -1,10 +1,8 @@
 import styled from 'styled-components'
+import { ModelSections } from '../../style/StylesGenerics'
 
-export const StylePerfil = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
+export const StylePerfil = styled(ModelSections)`
+  flex-direction: row;
   text-align: left;
   background: linear-gradient(#a9a9a9, #535353);
   padding-top: 100px;
@@ -48,7 +46,6 @@ export const StylePerfil = styled.div`
       a {
         padding: 0;
         text-align: center;
-        width: 200px;
       }
     }
     img {

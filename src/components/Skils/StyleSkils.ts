@@ -1,15 +1,27 @@
 import styled from 'styled-components'
+import { ModelSections } from '../../style/StylesGenerics'
 
-export const StyleHability = styled.div`
-  display: flex;
-  justify-content: center;
+export const StyleHability = styled(ModelSections)`
   gap: 20px;
-  align-items: center;
-  flex-direction: column;
   height: 100vh;
   text-align: left;
   background: linear-gradient(#353535, #383838);
   overflow-x: hidden;
+`
+export const CardSkils = styled.div`
+  display: flex;
+  gap: 100px;
+  justify-content: center;
+  align-items: center;
+  div {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  @media screen and (max-width: 700px) {
+    gap: 40px;
+  }
 `
 export const ContainerHability = styled.div`
   display: flex;
@@ -18,33 +30,6 @@ export const ContainerHability = styled.div`
   color: #ffff;
   flex-wrap: wrap;
   cursor: default;
-
-  .back {
-    div {
-      display: flex;
-      gap: 100px;
-      justify-content: center;
-      align-items: center;
-      @media screen and (max-width: 400px) {
-        gap: 50px;
-      }
-    }
-  }
-  .front {
-    display: flex;
-    gap: 100px;
-    justify-content: center;
-    align-items: center;
-    div {
-      display: flex;
-      flex-direction: column;
-      gap: 20px;
-    }
-
-    @media screen and (max-width: 700px) {
-      gap: 40px;
-    }
-  }
 `
 export const ContainerSkils = styled.div`
   background: rgb(105, 102, 102);

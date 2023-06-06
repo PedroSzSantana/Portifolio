@@ -28,7 +28,9 @@ interface ButtonProps {
   btnType: '1' | '2'
 }
 export const ButtonGeneric = styled.a<ButtonProps>`
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: ${({ btnType }) =>
     btnType === '1' ? 'darkgray' : 'rgb(73, 73, 73)'};
   color: #ffff;
@@ -42,10 +44,10 @@ export const ButtonGeneric = styled.a<ButtonProps>`
     background-color: rgb(104, 104, 104);
   }
   @media screen and (max-width: 500px) {
-    width: ${({ btnType }) => (btnType === '1' ? '200px' : '100px !important')};
+    width: ${({ btnType }) => (btnType === '1' ? '270px' : '125px')};
     padding: ${({ btnType }) => (btnType === '1' ? '10px 60px' : '10px 30px')};
+    height: ${({ btnType }) => (btnType === '1' ? '30px' : null)};
     text-align: center;
-    ${({ btnType }) => btnType !== '1' && 'width: 50px;'}
   }
 `
 export const ModelSections = styled.section`
@@ -54,5 +56,4 @@ export const ModelSections = styled.section`
   align-items: center;
   flex-direction: column;
   height: 100vh;
-  text-align: left;
 `

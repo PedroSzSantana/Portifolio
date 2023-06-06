@@ -1,11 +1,7 @@
 import styled from 'styled-components'
+import { ModelSections } from '../../style/StylesGenerics'
 
-export const StyleAbout = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
+export const StyleAbout = styled(ModelSections)`
   text-align: left;
   overflow-x: hidden;
   background: linear-gradient(#535353, #353535);
