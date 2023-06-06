@@ -12,40 +12,46 @@ import iconTs from '../../assets/images/logos/typescript.png'
 import iconRs from '../../assets/images/logos/react.png'
 import iconNode from '../../assets/images/logos/node-js.png'
 import iconMongo from '../../assets/images/logos/mongodb.png'
+import iconReactNative from '../../assets/images/logos/ReactNative.png'
+import iconMysql from '../../assets/images/logos/mysql.png'
 
 import { Fade } from 'react-awesome-reveal'
 
-const SectionSkils = () => {
-  const iconHTML = <img src={iconHtml} alt="IconCheck" />
-  const iconCSS = <img src={iconCss} alt="IconCheck" />
-  const iconJS = <img src={iconJs} alt="IconCheck" />
-  const iconTS = <img src={iconTs} alt="IconCheck" />
-  const iconRS = <img src={iconRs} alt="IconCheck" />
-  const iconNODE = <img src={iconNode} alt="IconCheck" />
-  const iconMONGO = <img src={iconMongo} alt="IconCheck" />
+const iconHTML = <img src={iconHtml} alt="Icon HTML" />
+const iconCSS = <img src={iconCss} alt="Icon CSS" />
+const iconJS = <img src={iconJs} alt="Icon Javascript" />
+const iconTS = <img src={iconTs} alt="Icon Typescript" />
+const iconRS = <img src={iconRs} alt="Icon React" />
+const iconNODE = <img src={iconNode} alt="Icon Nodejs" />
+const iconMONGO = <img src={iconMongo} alt="Icon Mongo" />
+const iconREACTNATIVE = <img src={iconReactNative} alt="Icon React Native" />
+const iconMYSQL = <img src={iconMysql} alt="Icon React Native" />
 
+const SectionSkils = () => {
   return (
     <StyleHability id="skils">
-      <TitleSection>Skils</TitleSection>
+      <Fade delay={500} direction="up">
+        <TitleSection>Skils</TitleSection>
+      </Fade>
       <ContainerHability>
-        <Fade delay={1000} direction="left">
+        <Fade delay={600} direction="left">
           <ContainerSkils>
             <h1>Front-End</h1>
             <CardSkils>
               <div>
-                <span>{iconHTML} HTML</span>
+                <span>{iconHTML}HTML</span>
                 <span>{iconCSS}CSS</span>
                 <span>{iconJS}JAVASCRIPT</span>
               </div>
               <div>
                 <span>{iconTS}TYPESCRIPT</span>
                 <span>{iconRS}REACTJS</span>
-                <span>{iconRS}REACT NATIVE</span>
+                <span>{iconREACTNATIVE}REACT NATIVE</span>
               </div>
             </CardSkils>
           </ContainerSkils>
         </Fade>
-        <Fade delay={1000} direction="right">
+        <Fade delay={600} direction="right">
           <ContainerSkils>
             <h1>Back-End</h1>
             <CardSkils>
@@ -54,7 +60,7 @@ const SectionSkils = () => {
                 <span>{iconMONGO}MONGODB</span>
               </div>
               <div>
-                <span>{iconNODE}MYSQL</span>
+                <span>{iconMYSQL}MYSQL</span>
               </div>
             </CardSkils>
           </ContainerSkils>

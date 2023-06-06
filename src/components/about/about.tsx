@@ -5,12 +5,12 @@ import { Fade } from 'react-awesome-reveal'
 export const SectionAbout = () => {
   return (
     <StyleAbout id="about">
-      <Fade direction="right" delay={800}>
+      <Fade direction="right" delay={500}>
         <TitleSection>Sobre Mim</TitleSection>
       </Fade>
       <Fade
         direction="left"
-        delay={1000}
+        delay={600}
         duration={2000}
         className="FadeArticle"
       >

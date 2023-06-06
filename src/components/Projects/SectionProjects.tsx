@@ -9,7 +9,7 @@ export const SectionProjects = () => {
         <TitleSection>Portifólio</TitleSection>
       </Fade>
       <div className="conteinerProjects">
-        <Fade direction="left" delay={800}>
+        <Fade direction="left" delay={600}>
           <CardProject>
             <p>EM BREVE</p>
           </CardProject>
@@ -22,7 +22,7 @@ export const SectionProjects = () => {
           </CardProject>
         </Fade>
       </div>
-      <Fade direction="down" delay={800}>
+      <Fade direction="down" delay={600}>
         <ButtonGeneric
           btnType={'1'}
           href="https://github.com/PedroSzSantana?tab=repositories"
