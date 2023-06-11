@@ -1,13 +1,11 @@
+import { TitleSection } from '../TitleSection/TitleSection'
 import { StyleAbout, TextAbout } from './StyledAbout'
-import { TitleSection } from '../../style/StylesGenerics'
 import { Fade } from 'react-awesome-reveal'
 
 export const SectionAbout = () => {
   return (
     <StyleAbout id="about">
-      <Fade direction="right" delay={500}>
-        <TitleSection>Sobre Mim</TitleSection>
-      </Fade>
+      <TitleSection>Sobre Mim</TitleSection>
       <Fade
         direction="left"
         delay={600}

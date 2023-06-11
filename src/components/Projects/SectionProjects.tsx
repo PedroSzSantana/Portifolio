@@ -1,13 +1,12 @@
 import { CardProject, StyleSectionProjects } from './StyledProjects'
-import { ButtonGeneric, TitleSection } from '../../style/StylesGenerics'
+import { ButtonGeneric } from '../../style/StylesGenerics'
 import { Fade } from 'react-awesome-reveal'
+import { TitleSection } from '../TitleSection/TitleSection'
 
 export const SectionProjects = () => {
   return (
     <StyleSectionProjects id="projects">
-      <Fade direction="up" cascade delay={500}>
-        <TitleSection>Portifólio</TitleSection>
-      </Fade>
+      <TitleSection>Portifólio</TitleSection>
       <div className="conteinerProjects">
         <Fade direction="left" delay={600}>
           <CardProject>

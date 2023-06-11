@@ -1,14 +1,18 @@
 import { StyledCertificates } from './StyledCertificates'
+
 import Slider from 'react-slick'
 import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
+
 import JS from '../../assets/images/img-certificates/CertificadoJS.png'
 import NODE from '../../assets/images/img-certificates/CertificadoNode.png'
 import REACT from '../../assets/images/img-certificates/CertificadoReact.png'
 import MONGODB from '../../assets/images/img-certificates/CertificadoMongodb.png'
 import LEIGO from '../../assets/images/img-certificates/CertificadoIntr.jpg'
 import REACTNATIVE from '../../assets/images/img-certificates/CertificadoReactNative.jpeg'
-import { TitleSection } from '../../style/StylesGenerics'
+import FULLSTACK from '../../assets/images/img-certificates/CertificadoFullStack.png'
+
+import { TitleSection } from '../TitleSection/TitleSection'
 
 const settings = {
   autoplay: true,
@@ -31,12 +35,12 @@ const settings = {
 export const SectionCertificates = () => {
   return (
     <StyledCertificates id="certificates">
-      <TitleSection>Certificates</TitleSection>
+      <TitleSection>Certificados</TitleSection>
       <div>
         <Slider {...settings}>
           <div>
             <a
-              href="https://github.com/PedroSzSantana/certificates/blob/main/CertificadoJS.png"
+              href="https://github.com/PedroSzSantana/certificates/blob/main/CertificadoJavascript.jpeg"
               target="_blank"
               rel="noreferrer"
             >
@@ -45,7 +49,7 @@ export const SectionCertificates = () => {
           </div>
           <div>
             <a
-              href="https://github.com/PedroSzSantana/certificates/blob/main/CertificadoNode.png"
+              href="https://github.com/PedroSzSantana/certificates/blob/main/CertificadoNodeJs.jpeg"
               target="_blank"
               rel="noreferrer"
             >
@@ -54,7 +58,7 @@ export const SectionCertificates = () => {
           </div>
           <div>
             <a
-              href="https://github.com/PedroSzSantana/certificates/blob/main/CertificadoReact.png"
+              href="https://github.com/PedroSzSantana/certificates/blob/main/CertificadoReact.jpeg"
               target="_blank"
               rel="noreferrer"
             >
@@ -72,7 +76,7 @@ export const SectionCertificates = () => {
           </div>
           <div>
             <a
-              href="https://github.com/PedroSzSantana/certificates/blob/main/CertificadoMongodb.pdf"
+              href="https://github.com/PedroSzSantana/certificates/blob/main/CertificadoMongoDB.jpeg"
               target="_blank"
               rel="noreferrer"
             >
@@ -81,11 +85,20 @@ export const SectionCertificates = () => {
           </div>
           <div>
             <a
-              href="https://github.com/PedroSzSantana/certificates/blob/main/CertificadoMongodb.pdf"
+              href="https://github.com/PedroSzSantana/certificates/blob/main/CertificadoReactNative.jpeg"
               target="_blank"
               rel="noreferrer"
             >
               <img src={REACTNATIVE} alt="" />
+            </a>
+          </div>
+          <div>
+            <a
+              href="https://github.com/PedroSzSantana/certificates/blob/main/CertificadoFullStack.png"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img src={FULLSTACK} alt="" />
             </a>
           </div>
         </Slider>

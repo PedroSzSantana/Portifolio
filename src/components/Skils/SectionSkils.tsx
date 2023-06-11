@@ -1,4 +1,3 @@
-import { TitleSection } from '../../style/StylesGenerics'
 import {
   CardSkils,
   ContainerHability,
@@ -16,6 +15,7 @@ import iconReactNative from '../../assets/images/logos/ReactNative.png'
 import iconMysql from '../../assets/images/logos/mysql.png'
 
 import { Fade } from 'react-awesome-reveal'
+import { TitleSection } from '../TitleSection/TitleSection'
 
 const iconHTML = <img src={iconHtml} alt="Icon HTML" />
 const iconCSS = <img src={iconCss} alt="Icon CSS" />
@@ -30,9 +30,7 @@ const iconMYSQL = <img src={iconMysql} alt="Icon React Native" />
 const SectionSkils = () => {
   return (
     <StyleHability id="skils">
-      <Fade delay={500} direction="up">
-        <TitleSection>Skils</TitleSection>
-      </Fade>
+      <TitleSection>Skils</TitleSection>
       <ContainerHability>
         <Fade delay={600} direction="left">
           <ContainerSkils>
