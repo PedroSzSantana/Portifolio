@@ -1,7 +1,7 @@
 import {
   CardSkils,
-  ContainerHability,
-  ContainerSkils,
+  ContainerCards,
+  ContainerSkilsCard,
   StyleHability,
 } from './StyleSkils'
 import iconHtml from '../../assets/images/logos/html5.png'
@@ -21,11 +21,11 @@ const SectionSkils = () => {
   return (
     <StyleHability id="skils">
       <TitleSection>Skils</TitleSection>
-      <ContainerHability>
+      <ContainerCards>
         <Fade delay={500} direction="left">
-          <ContainerSkils>
+          <CardSkils>
             <h1>Front-End</h1>
-            <CardSkils>
+            <ContainerSkilsCard>
               <div>
                 <span>
                   <img src={iconHtml} alt="Icon HTML" />
@@ -54,13 +54,13 @@ const SectionSkils = () => {
                   REACT NATIVE
                 </span>
               </div>
-            </CardSkils>
-          </ContainerSkils>
+            </ContainerSkilsCard>
+          </CardSkils>
         </Fade>
         <Fade delay={500} direction="right">
-          <ContainerSkils>
+          <CardSkils>
             <h1>Back-End</h1>
-            <CardSkils>
+            <ContainerSkilsCard>
               <div>
                 <span>
                   <img src={iconNode} alt="Icon Nodejs" />
@@ -77,10 +77,10 @@ const SectionSkils = () => {
                   MYSQL
                 </span>
               </div>
-            </CardSkils>
-          </ContainerSkils>
+            </ContainerSkilsCard>
+          </CardSkils>
         </Fade>
-      </ContainerHability>
+      </ContainerCards>
     </StyleHability>
   )
 }

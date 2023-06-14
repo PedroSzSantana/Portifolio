@@ -8,22 +8,7 @@ export const StyleHability = styled(ModelSections)`
   background: linear-gradient(#353535, #383838);
   overflow-x: hidden;
 `
-export const CardSkils = styled.div`
-  display: flex;
-  gap: 100px;
-  justify-content: center;
-  align-items: center;
-  div {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-  }
-
-  @media screen and (max-width: 700px) {
-    gap: 40px;
-  }
-`
-export const ContainerHability = styled.div`
+export const ContainerCards = styled.div`
   display: flex;
   justify-content: center;
   gap: 30px;
@@ -31,7 +16,7 @@ export const ContainerHability = styled.div`
   flex-wrap: wrap;
   cursor: default;
 `
-export const ContainerSkils = styled.div`
+export const CardSkils = styled.div`
   background: rgb(105, 102, 102);
   display: flex;
   flex-direction: column;
@@ -74,5 +59,20 @@ export const ContainerSkils = styled.div`
   }
   @media screen and (max-width: 400px) {
     height: 200px;
+  }
+`
+export const ContainerSkilsCard = styled.div`
+  display: flex;
+  gap: 100px;
+  justify-content: center;
+  align-items: center;
+  div {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  @media screen and (max-width: 700px) {
+    gap: 40px;
   }
 `
