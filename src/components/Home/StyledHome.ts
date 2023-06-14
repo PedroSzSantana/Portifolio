@@ -7,7 +7,7 @@ export const StylePerfil = styled(ModelSections)`
   background: linear-gradient(#a9a9a9, #535353);
   padding-top: 100px;
   cursor: default;
-
+  overflow-y: hidden;
   .lowerbtns {
     display: flex;
     flex-direction: row;
