@@ -22,7 +22,7 @@ const SectionSkils = () => {
     <StyleHability id="skils">
       <TitleSection>Skils</TitleSection>
       <ContainerCards>
-        <Fade delay={500} direction="left">
+        <Fade delay={500} direction="left" triggerOnce={true}>
           <CardSkils>
             <h1>Front-End</h1>
             <ContainerSkilsCard>
@@ -57,7 +57,7 @@ const SectionSkils = () => {
             </ContainerSkilsCard>
           </CardSkils>
         </Fade>
-        <Fade delay={500} direction="right">
+        <Fade delay={500} direction="right" triggerOnce={true}>
           <CardSkils>
             <h1>Back-End</h1>
             <ContainerSkilsCard>

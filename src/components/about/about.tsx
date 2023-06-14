@@ -10,6 +10,7 @@ export const SectionAbout = () => {
         delay={500}
         duration={2000}
         className="FadeArticle"
+        triggerOnce={true}
       >
         <Paragraph>
           Meu nome é Pedro Souza, tenho 19 anos e sou apaixonado por tecnologia

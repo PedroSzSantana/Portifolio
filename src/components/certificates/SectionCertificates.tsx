@@ -22,7 +22,7 @@ const settings = {
   autoplay: true,
   autoplaySpeed: 3000,
   dots: true,
-  speed: 500,
+  speed: 400,
   slidesToShow: 2,
   slidesToScroll: 1,
   responsive: [
@@ -40,7 +40,12 @@ export const SectionCertificates = () => {
   return (
     <StyledCertificates id="certificates">
       <TitleSection>Certificados</TitleSection>
-      <ContainerSlider direction="left" delay={500} duration={2000}>
+      <ContainerSlider
+        direction="left"
+        delay={500}
+        duration={2000}
+        triggerOnce={true}
+      >
         <Slider {...settings}>
           <div>
             <a

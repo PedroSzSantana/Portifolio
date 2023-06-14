@@ -1,8 +1,7 @@
 import styled from 'styled-components'
-const flex = ['display:flex;']
 export const StyleFooter = styled.footer`
   height: 70px;
-  ${flex}
+  display: flex;
   justify-content: space-evenly;
   align-items: center;
   background: linear-gradient(#383838, #2c2b2b);
