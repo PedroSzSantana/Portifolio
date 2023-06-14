@@ -1,5 +1,13 @@
 import styled from 'styled-components'
 
+export const ModelSections = styled.section`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  overflow-x: hidden;
+  height: 100vh;
+`
 interface ButtonProps {
   btnType: '1' | '2'
 }
@@ -25,11 +33,4 @@ export const ButtonGeneric = styled.a<ButtonProps>`
     height: ${({ btnType }) => (btnType === '1' ? '30px' : null)};
     text-align: center;
   }
-`
-export const ModelSections = styled.section`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  height: 100vh;
 `

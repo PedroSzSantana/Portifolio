@@ -1,4 +1,8 @@
-import { StyledCertificates } from './StyledCertificates'
+import {
+  ContainerSlider,
+  StyledCertificates,
+  ImageSlider,
+} from './StyledCertificates'
 
 import Slider from 'react-slick'
 import 'slick-carousel/slick/slick.css'
@@ -36,7 +40,7 @@ export const SectionCertificates = () => {
   return (
     <StyledCertificates id="certificates">
       <TitleSection>Certificados</TitleSection>
-      <div>
+      <ContainerSlider direction="left" delay={600} duration={2000}>
         <Slider {...settings}>
           <div>
             <a
@@ -44,7 +48,7 @@ export const SectionCertificates = () => {
               target="_blank"
               rel="noreferrer"
             >
-              <img src={JS} alt="Imagem Certificado Javascript" />
+              <ImageSlider src={JS} alt="Imagem Certificado Javascript" />
             </a>
           </div>
           <div>
@@ -53,7 +57,7 @@ export const SectionCertificates = () => {
               target="_blank"
               rel="noreferrer"
             >
-              <img src={NODE} alt="Imagem Certificado NodeJS" />
+              <ImageSlider src={NODE} alt="Imagem Certificado NodeJS" />
             </a>
           </div>
           <div>
@@ -62,7 +66,7 @@ export const SectionCertificates = () => {
               target="_blank"
               rel="noreferrer"
             >
-              <img src={REACT} alt="Imagem Certificado React" />
+              <ImageSlider src={REACT} alt="Imagem Certificado React" />
             </a>
           </div>
           <div>
@@ -71,7 +75,7 @@ export const SectionCertificates = () => {
               target="_blank"
               rel="noreferrer"
             >
-              <img src={LEIGO} alt="" />
+              <ImageSlider src={LEIGO} alt="" />
             </a>
           </div>
           <div>
@@ -80,7 +84,7 @@ export const SectionCertificates = () => {
               target="_blank"
               rel="noreferrer"
             >
-              <img src={MONGODB} alt="" />
+              <ImageSlider src={MONGODB} alt="" />
             </a>
           </div>
           <div>
@@ -89,7 +93,7 @@ export const SectionCertificates = () => {
               target="_blank"
               rel="noreferrer"
             >
-              <img src={REACTNATIVE} alt="" />
+              <ImageSlider src={REACTNATIVE} alt="" />
             </a>
           </div>
           <div>
@@ -98,11 +102,11 @@ export const SectionCertificates = () => {
               target="_blank"
               rel="noreferrer"
             >
-              <img src={FULLSTACK} alt="" />
+              <ImageSlider src={FULLSTACK} alt="" />
             </a>
           </div>
         </Slider>
-      </div>
+      </ContainerSlider>
     </StyledCertificates>
   )
 }

@@ -1,45 +1,43 @@
-import styled from 'styled-components'
+import styled, { keyframes } from 'styled-components'
 
-interface Props {
-  Conteiner: 'up' | 'bottom'
-}
-export const AnimationGif = styled.div<Props>`
-  width: 100%;
+const ContAnimationGenerc = styled.div`
+  width: 99%;
   border-bottom: solid 1px rgb(39, 39, 39);
   overflow: hidden;
   position: absolute;
-  height: 70px;
-  margin-left: ${({ Conteiner }) => (Conteiner === 'up' ? '20px' : '0px')};
-  margin-top: ${({ Conteiner }) => (Conteiner === 'up' ? '20vh' : '70vh')};
-  transform: ${({ Conteiner }) =>
-    Conteiner === 'up' ? 'rotateZ(15deg);' : 'rotateZ(-13.5deg);'};
+  height: 50px;
   img {
-    position: absolute;
-    width: 80px;
-    animation: ${({ Conteiner }) =>
-      Conteiner === 'up'
-        ? 'movimentBNC 15s infinite;'
-        : 'movimentBNC2 15s infinite;'};
-    transform: ${({ Conteiner }) =>
-      Conteiner === 'bottom' ? 'rotateY(180deg)' : ''};
+    width: 60px;
   }
-  @keyframes movimentBNC {
-    0% {
-      margin-left: -50px;
-    }
-    100% {
-      margin-left: 200%;
-    }
+`
+const movimentBNC = keyframes`
+  0% {
+    margin-left: -50px;
   }
-  @keyframes movimentBNC2 {
-    0% {
-      margin-left: 200%;
-    }
-    100% {
-      margin-left: -50px;
-    }
+  100% {
+    margin-left: 200%;
   }
-  @media screen and (max-width: 720px) {
-    display: none;
+`
+const movimentBNC2 = keyframes`
+  0% {
+    margin-left: 200%;
+  }
+  100% {
+    margin-left: -50px;
+  }
+`
+export const AnimationGif1 = styled(ContAnimationGenerc)`
+  top: 20vh;
+  transform: rotatez(15.2deg);
+  img {
+    animation: ${movimentBNC} 20s infinite;
+  }
+`
+export const AnimationGif2 = styled(ContAnimationGenerc)`
+  top: 70vh;
+  transform: rotateZ(-15deg);
+  img {
+    transform: rotateY(180deg);
+    animation: ${movimentBNC2} 20s infinite;
   }
 `

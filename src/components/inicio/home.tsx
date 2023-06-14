@@ -1,4 +1,4 @@
-import { StylePerfil } from './StyledHome'
+import { ContainerData, ImageProfile, StylePerfil } from './StyledHome'
 import Profile from '../../assets/images/Profile.webp'
 import CV from '../../assets/Pedro_Souza Santana_Curriculo.pdf'
 import { ButtonGeneric } from '../../style/StylesGenerics'
@@ -12,7 +12,7 @@ export const Home = () => {
       <Animation />
       <StylePerfil id="home">
         <Fade delay={1000} direction="up" cascade>
-          <div>
+          <ContainerData>
             <h3>Olá eu sou</h3>
             <h1 className="font-name" id="name">
               Pedro Souza
@@ -28,7 +28,7 @@ export const Home = () => {
                 Meu Linkedin
               </ButtonGeneric>
             </Fade>
-            <div className="btns">
+            <div className="lowerbtns">
               <Fade delay={1200} direction="up" cascade>
                 <ButtonGeneric btnType={'2'} download href={CV}>
                   <DownloadOutlined />
@@ -47,12 +47,10 @@ export const Home = () => {
                 </ButtonGeneric>
               </Fade>
             </div>
-          </div>
+          </ContainerData>
         </Fade>
         <Fade direction="right">
-          <div>
-            <img src={Profile} alt="Foto Perfil" />
-          </div>
+          <ImageProfile src={Profile} alt="Foto Perfil" />
         </Fade>
       </StylePerfil>
     </>
