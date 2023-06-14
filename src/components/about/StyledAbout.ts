@@ -1,35 +1,32 @@
 import styled from 'styled-components'
 import { ModelSections } from '../../style/StylesGenerics'
+import { Fade } from 'react-awesome-reveal'
 
 export const StyleAbout = styled(ModelSections)`
-  text-align: left;
-  overflow-x: hidden;
   background: linear-gradient(#535353, #353535);
-  .FadeArticle {
-    display: flex;
-    justify-content: center;
+`
+export const ContainerArticle = styled(Fade)`
+  overflow-y: hidden;
+  width: 50%;
+  @media screen and (max-width: 730px) {
+    padding-top: 5px;
+    width: 85%;
   }
 `
-export const TextAbout = styled.article`
+export const Paragraph = styled.p`
+  text-align: start;
   cursor: default;
-  width: 50%;
   color: #ffff;
   font-size: 20px;
   font-weight: 500;
-
   @media screen and (max-width: 730px) {
-    padding-top: 20px;
-    width: 85%;
     font-size: 18px;
   }
   @media screen and (max-width: 700px) {
-    padding-top: 20px;
-    width: 85%;
     font-size: 14px;
-    font-weight: 400;
+    font-weight: 500;
   }
   @media screen and (max-width: 400px) {
-    width: 85%;
     font-size: 12px;
   }
 `

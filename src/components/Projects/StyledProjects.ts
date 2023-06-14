@@ -1,26 +1,27 @@
 import styled from 'styled-components'
 import { ModelSections } from '../../style/StylesGenerics'
 
+const Flex = [
+  'display: flex;',
+  'justify-content: center;',
+  'align-items: center;',
+]
+
 export const StyleSectionProjects = styled(ModelSections)`
   text-align: left;
   background: linear-gradient(#383838, #383838);
-  overflow: hidden;
   a {
     padding: 10px 20px !important;
   }
-  .conteinerProjects {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 15px;
-    overflow: hidden;
-    flex-wrap: wrap;
-  }
+`
+export const ContainerProjects = styled.div`
+  ${Flex}
+  gap: 15px;
+  overflow: hidden;
+  flex-wrap: wrap;
 `
 export const CardProject = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  ${Flex}
   border: solid 6px rgb(105, 102, 102);
   border-radius: 10px;
   width: 200px;

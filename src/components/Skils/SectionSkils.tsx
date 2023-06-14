@@ -17,16 +17,6 @@ import iconMysql from '../../assets/images/logos/mysql.png'
 import { Fade } from 'react-awesome-reveal'
 import { TitleSection } from '../TitleSection/TitleSection'
 
-const iconHTML = <img src={iconHtml} alt="Icon HTML" />
-const iconCSS = <img src={iconCss} alt="Icon CSS" />
-const iconJS = <img src={iconJs} alt="Icon Javascript" />
-const iconTS = <img src={iconTs} alt="Icon Typescript" />
-const iconRS = <img src={iconRs} alt="Icon React" />
-const iconNODE = <img src={iconNode} alt="Icon Nodejs" />
-const iconMONGO = <img src={iconMongo} alt="Icon Mongo" />
-const iconREACTNATIVE = <img src={iconReactNative} alt="Icon React Native" />
-const iconMYSQL = <img src={iconMysql} alt="Icon React Native" />
-
 const SectionSkils = () => {
   return (
     <StyleHability id="skils">
@@ -37,14 +27,32 @@ const SectionSkils = () => {
             <h1>Front-End</h1>
             <CardSkils>
               <div>
-                <span>{iconHTML}HTML</span>
-                <span>{iconCSS}CSS</span>
-                <span>{iconJS}JAVASCRIPT</span>
+                <span>
+                  <img src={iconHtml} alt="Icon HTML" />
+                  HTML
+                </span>
+                <span>
+                  <img src={iconCss} alt="Icon CSS" />
+                  CSS
+                </span>
+                <span>
+                  <img src={iconJs} alt="Icon Javascript" />
+                  JAVASCRIPT
+                </span>
               </div>
               <div>
-                <span>{iconTS}TYPESCRIPT</span>
-                <span>{iconRS}REACTJS</span>
-                <span>{iconREACTNATIVE}REACT NATIVE</span>
+                <span>
+                  <img src={iconTs} alt="Icon Typescript" />
+                  TYPESCRIPT
+                </span>
+                <span>
+                  <img src={iconRs} alt="Icon React" />
+                  REACTJS
+                </span>
+                <span>
+                  <img src={iconReactNative} alt="Icon React Native" />
+                  REACT NATIVE
+                </span>
               </div>
             </CardSkils>
           </ContainerSkils>
@@ -54,11 +62,20 @@ const SectionSkils = () => {
             <h1>Back-End</h1>
             <CardSkils>
               <div>
-                <span>{iconNODE}NODE-JS</span>
-                <span>{iconMONGO}MONGODB</span>
+                <span>
+                  <img src={iconNode} alt="Icon Nodejs" />
+                  NODE-JS
+                </span>
+                <span>
+                  <img src={iconMongo} alt="Icon Mongo" />
+                  MONGODB
+                </span>
               </div>
               <div>
-                <span>{iconMYSQL}MYSQL</span>
+                <span>
+                  <img src={iconMysql} alt="Icon React Native" />
+                  MYSQL
+                </span>
               </div>
             </CardSkils>
           </ContainerSkils>
