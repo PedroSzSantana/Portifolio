@@ -1,5 +1,5 @@
 import SectionSkils from '../components/Skils/SectionSkils'
-import { Home } from '../components/inicio/home'
+import { Home } from '../components/Home/home'
 import { Navbar } from '../components/Navbar/Navbar'
 import { SectionProjects } from '../components/Projects/SectionProjects'
 import { SectionAbout } from '../components/about/about'
