@@ -7,7 +7,7 @@ export const SectionAbout = () => {
       <TitleSection>Sobre Mim</TitleSection>
       <ContainerArticle
         direction="left"
-        delay={600}
+        delay={500}
         duration={2000}
         className="FadeArticle"
       >

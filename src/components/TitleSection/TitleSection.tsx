@@ -7,7 +7,7 @@ type Children = {
 }
 export const TitleSection = ({ children }: Children) => {
   return (
-    <Fade direction="up" cascade delay={500} style={{ width: 'auto' }}>
+    <Fade direction="up" cascade delay={400} style={{ width: 'auto' }}>
       <StyleTitleSection>{children}</StyleTitleSection>
     </Fade>
   )

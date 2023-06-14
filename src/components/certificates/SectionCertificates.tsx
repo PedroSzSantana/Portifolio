@@ -40,7 +40,7 @@ export const SectionCertificates = () => {
   return (
     <StyledCertificates id="certificates">
       <TitleSection>Certificados</TitleSection>
-      <ContainerSlider direction="left" delay={600} duration={2000}>
+      <ContainerSlider direction="left" delay={500} duration={2000}>
         <Slider {...settings}>
           <div>
             <a
