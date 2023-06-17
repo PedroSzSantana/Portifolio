@@ -2,20 +2,13 @@ import {
   CardSkils,
   ContainerCards,
   ContainerSkilsCard,
+  SpanSkils,
   StyleHability,
 } from './StyleSkils'
-import iconHtml from '../../assets/images/logos/html5.png'
-import iconCss from '../../assets/images/logos/css3.png'
-import iconJs from '../../assets/images/logos/javascript.png'
-import iconTs from '../../assets/images/logos/typescript.png'
-import iconRs from '../../assets/images/logos/react.png'
-import iconNode from '../../assets/images/logos/node-js.png'
-import iconMongo from '../../assets/images/logos/mongodb.png'
-import iconReactNative from '../../assets/images/logos/ReactNative.png'
-import iconMysql from '../../assets/images/logos/mysql.png'
 
 import { Fade } from 'react-awesome-reveal'
 import { TitleSection } from '../TitleSection/TitleSection'
+import { Icon } from '@iconify/react'
 
 const SectionSkils = () => {
   return (
@@ -27,32 +20,60 @@ const SectionSkils = () => {
             <h1>Front-End</h1>
             <ContainerSkilsCard>
               <div>
-                <span>
-                  <img src={iconHtml} alt="Icon HTML" />
-                  HTML
-                </span>
-                <span>
-                  <img src={iconCss} alt="Icon CSS" />
-                  CSS
-                </span>
-                <span>
-                  <img src={iconJs} alt="Icon Javascript" />
-                  JAVASCRIPT
-                </span>
+                <SpanSkils background={'#E95828'}>
+                  <Icon
+                    icon="vscode-icons:file-type-html"
+                    color="black"
+                    width="48"
+                    height="48"
+                  />
+                  <p>HTML</p>
+                </SpanSkils>
+                <SpanSkils background={'#1572B6'}>
+                  <Icon
+                    icon="vscode-icons:file-type-css"
+                    color="black"
+                    width="48"
+                    height="48"
+                  />
+                  <p>CSS</p>
+                </SpanSkils>
+                <SpanSkils background={'#F5DE19'}>
+                  <Icon
+                    icon="vscode-icons:file-type-js-official"
+                    width="48"
+                    height="48"
+                  />
+                  <p>JAVASCRIPT</p>
+                </SpanSkils>
               </div>
               <div>
-                <span>
-                  <img src={iconTs} alt="Icon Typescript" />
-                  TYPESCRIPT
-                </span>
-                <span>
-                  <img src={iconRs} alt="Icon React" />
-                  REACTJS
-                </span>
-                <span>
-                  <img src={iconReactNative} alt="Icon React Native" />
-                  REACT NATIVE
-                </span>
+                <SpanSkils background={'#007ACC'}>
+                  <Icon
+                    icon="skill-icons:typescript"
+                    color="black"
+                    width="48"
+                    height="48"
+                  />
+                  <p>TYPESCRIPT</p>
+                </SpanSkils>
+                <SpanSkils background={'#00D8FF'}>
+                  <Icon
+                    icon="logos:react"
+                    color="black"
+                    width="48"
+                    height="48"
+                  />
+                  <p>REACTJS</p>
+                </SpanSkils>
+                <SpanSkils background={'#4C4C4E'}>
+                  <Icon
+                    icon="teenyicons:react-outline"
+                    color="black"
+                    width="48"
+                  />{' '}
+                  <p>REACT NATIVE</p>
+                </SpanSkils>
               </div>
             </ContainerSkilsCard>
           </CardSkils>
@@ -62,20 +83,30 @@ const SectionSkils = () => {
             <h1>Back-End</h1>
             <ContainerSkilsCard>
               <div>
-                <span>
-                  <img src={iconNode} alt="Icon Nodejs" />
-                  NODE-JS
-                </span>
-                <span>
-                  <img src={iconMongo} alt="Icon Mongo" />
-                  MONGODB
-                </span>
+                <SpanSkils background={'#539E43'}>
+                  <Icon icon="logos:nodejs-icon" width="48" height="48" />
+                  <p>NODE-JS</p>
+                </SpanSkils>
+                <SpanSkils background={'#539547'}>
+                  <Icon
+                    icon="devicon:mongodb-wordmark"
+                    color="black"
+                    width="48"
+                    height="48"
+                  />
+                  <p>MONGODB</p>
+                </SpanSkils>
               </div>
               <div>
-                <span>
-                  <img src={iconMysql} alt="Icon React Native" />
-                  MYSQL
-                </span>
+                <SpanSkils background={'#2A4B59'}>
+                  <Icon
+                    icon="tabler:brand-mysql"
+                    color="black"
+                    width="48"
+                    height="48"
+                  />
+                  <p>MYSQL</p>
+                </SpanSkils>
               </div>
             </ContainerSkilsCard>
           </CardSkils>
