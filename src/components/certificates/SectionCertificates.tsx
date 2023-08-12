@@ -2,21 +2,22 @@ import {
   ContainerSlider,
   StyledCertificates,
   ImageSlider,
-} from './StyledCertificates'
+} from "./StyledCertificates";
 
-import Slider from 'react-slick'
-import 'slick-carousel/slick/slick.css'
-import 'slick-carousel/slick/slick-theme.css'
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
-import JS from '../../assets/images/img-certificates/CertificadoJS.png'
-import NODE from '../../assets/images/img-certificates/CertificadoNode.png'
-import REACT from '../../assets/images/img-certificates/CertificadoReact.png'
-import MONGODB from '../../assets/images/img-certificates/CertificadoMongodb.png'
-import LEIGO from '../../assets/images/img-certificates/CertificadoIntr.jpg'
-import REACTNATIVE from '../../assets/images/img-certificates/CertificadoReactNative.jpeg'
-import FULLSTACK from '../../assets/images/img-certificates/CertificadoFullStack.png'
+import JS from "../../assets/images/img-certificates/CertificadoJS.png";
+import NODE from "../../assets/images/img-certificates/CertificadoNode.png";
+import REACT from "../../assets/images/img-certificates/CertificadoReact.png";
+import MONGODB from "../../assets/images/img-certificates/CertificadoMongodb.png";
+import LEIGO from "../../assets/images/img-certificates/CertificadoIntr.jpg";
+import REACTNATIVE from "../../assets/images/img-certificates/CertificadoReactNative.jpeg";
+import FULLSTACK from "../../assets/images/img-certificates/CertificadoFullStack.png";
+import FORMACAONODEJS from "../../assets/images/img-certificates/CursoFormacaoNodejs.jpg";
 
-import { TitleSection } from '../TitleSection/TitleSection'
+import { TitleSection } from "../TitleSection/TitleSection";
 
 const settings = {
   autoplay: true,
@@ -34,7 +35,7 @@ const settings = {
       },
     },
   ],
-}
+};
 
 export const SectionCertificates = () => {
   return (
@@ -110,8 +111,17 @@ export const SectionCertificates = () => {
               <ImageSlider src={FULLSTACK} alt="" />
             </a>
           </div>
+          <div>
+            <a
+              href="https://github.com/PedroSzSantana/certificates/blob/main/CursoNodeJS.pdf"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <ImageSlider src={FORMACAONODEJS} alt="" />
+            </a>
+          </div>
         </Slider>
       </ContainerSlider>
     </StyledCertificates>
-  )
-}
+  );
+};
