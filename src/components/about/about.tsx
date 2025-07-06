@@ -13,7 +13,7 @@ export const SectionAbout = () => {
         triggerOnce={true}
       >
         <Paragraph>
-          Meu nome é Pedro Souza, tenho 19 anos e sou apaixonado por tecnologia
+          Meu nome é Pedro Souza, tenho 21 anos e sou apaixonado por tecnologia
           desde muito jovem. Não sei ao certo como me interessei pela
           programação, mas parece que foi destino. Quando percebi, descobri que
           programar é realmente minha paixão.
