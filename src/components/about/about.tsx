@@ -13,7 +13,7 @@ export const SectionAbout = () => {
         triggerOnce={true}
       >
         <Paragraph>
-          Meu nome é Pedro Souza, 21 anos. Minha paixão pela tecnologia me acompanha desde jovem e, na programação, encontrei meu objetivo de carreira.
+          Meu nome é Pedro Souza, 22 anos. Minha paixão pela tecnologia me acompanha desde jovem e, na programação, encontrei meu objetivo de carreira.
         </Paragraph>
         <Paragraph>
           Iniciei meus estudos em 2021 e, desde então, venho desenvolvendo competências em front-end, back-end e mobile. Meu foco atual é aprofundar esse conhecimento, sempre conectado às novas tendências do mercado.
