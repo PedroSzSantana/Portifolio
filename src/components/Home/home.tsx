@@ -1,6 +1,6 @@
 import { ContainerData, ImageProfile, StylePerfil } from './StyledHome'
 import Profile from '../../assets/images/Profile.webp'
-import CV from '../../assets/Pedro_Souza Santana_Curriculo.pdf'
+import CV from '../../assets/Pedro_Souza_Santana_Curriculo.pdf'
 import { ButtonGeneric } from '../../style/StylesGenerics'
 import { Animation } from './Animation/Animation'
 import { Fade } from 'react-awesome-reveal'
