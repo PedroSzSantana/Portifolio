@@ -13,22 +13,13 @@ export const SectionAbout = () => {
         triggerOnce={true}
       >
         <Paragraph>
-          Meu nome é Pedro Souza, tenho 21 anos e sou apaixonado por tecnologia
-          desde muito jovem. Não sei ao certo como me interessei pela
-          programação, mas parece que foi destino. Quando percebi, descobri que
-          programar é realmente minha paixão.
+          Meu nome é Pedro Souza, 21 anos. Minha paixão pela tecnologia me acompanha desde jovem e, na programação, encontrei meu objetivo de carreira.
         </Paragraph>
         <Paragraph>
-          Comecei a estudar programação em 2021 e, desde então, adquiri
-          conhecimento em desenvolvimento front-end, back-end e mobile.
-          Atualmente, estou dedicado a aprimorar e aprofundar ainda mais meus
-          conhecimentos nessa área.
+          Iniciei meus estudos em 2021 e, desde então, venho desenvolvendo competências em front-end, back-end e mobile. Meu foco atual é aprofundar esse conhecimento, sempre conectado às novas tendências do mercado.
         </Paragraph>
         <Paragraph>
-          Através do estudo contínuo, estou em busca de oportunidades para
-          aplicar minhas habilidades e contribuir para projetos desafiadores.
-          Estou sempre aberto a novas tecnologias e tendências, buscando me
-          manter atualizado e expandir meu conjunto de habilidades.
+          Busco uma oportunidade para aplicar o que aprendi em projetos que me desafiem a crescer. Estou animado para contribuir com equipes e continuar evoluindo como profissional.
         </Paragraph>
         <Paragraph>
           Estou animado com o futuro da programação e ansioso para enfrentar
